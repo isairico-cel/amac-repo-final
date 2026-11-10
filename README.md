@@ -1,7 +1,7 @@
 # amac-repo-final
 Proyecto final de desarrollo de aplicaciones web
 
-# Integrantes
+## Integrantes
 Andres Espinosa: Realizo la pagina de quienes-somos y los archivos de la carpeta de css ademas de las imagenes en la carpeta img
 Patricio Alanis: realizo la pagina de admin-empresa, empresa-vacante, index y 404.
 Isai Rico: Realizo las paginas de login, registro-candidato, vacante y mis-solicitudes. También creó el repositorio inicial
