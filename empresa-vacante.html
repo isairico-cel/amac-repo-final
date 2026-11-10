@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis vacantes | AMAC</title>
+  <meta name="description" content="Panel de vacantes de la empresa.">
+  <link rel="icon" href="img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <div class="barra-ayuda">
+    <div class="contenedor barra-ayuda__interior">
+      <a href="tel:+528110223344"><img src="img/icono-telefono.svg" alt="" width="24" height="24">¿Necesitas ayuda? Llama a AMAC: (81) 1022 3344</a>
+    </div>
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="62" height="31">
+        <span class="logo__texto"><span class="logo__nombre">AMAC</span><span class="logo__sub">Bolsa de trabajo</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="menu__enlace" href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a class="menu__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="menu__enlace" href="empresa-vacantes.html" aria-current="page">Panel de empresa</a></li>
+          <li><a class="menu__enlace menu__enlace--destacado" href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor">
+      <h1>Mis vacantes</h1>
+      <p class="subtitulo">Papelería El Roble</p>
+
+      <div class="acciones acciones--fila">
+        <button class="boton boton--acento" type="button">Publicar nueva vacante</button>
+        <a class="boton boton--secundario" href="index.html">Ver bolsa de trabajo</a>
+      </div>
+
+      <section class="lista-tarjetas" aria-label="Vacantes de la empresa">
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Auxiliar administrativo</h2>
+          <p class="etiqueta-estatus etiqueta-estatus--aceptado">Activa</p>
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Solicitudes recibidas:</strong> 8</li>
+            <li><strong>Publicada:</strong> <time datetime="2026-10-20">20 de octubre de 2026</time></li>
+          </ul>
+          <div class="tarjeta-vacante__acciones">
+            <button class="boton boton--primario" type="button">Ver candidatos<span class="solo-lector"> de Auxiliar administrativo</span></button>
+            <button class="boton boton--secundario" type="button">Editar<span class="solo-lector"> Auxiliar administrativo</span></button>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Vendedor(a) de mostrador</h2>
+          <p class="etiqueta-estatus etiqueta-estatus--pausada">Pausada</p>
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Solicitudes recibidas:</strong> 3</li>
+            <li><strong>Publicada:</strong> <time datetime="2026-10-12">12 de octubre de 2026</time></li>
+          </ul>
+          <div class="tarjeta-vacante__acciones">
+            <button class="boton boton--primario" type="button">Ver candidatos<span class="solo-lector"> de Vendedor(a) de mostrador</span></button>
+            <button class="boton boton--secundario" type="button">Editar<span class="solo-lector"> Vendedor(a) de mostrador</span></button>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Repartidor(a)</h2>
+          <p class="etiqueta-estatus etiqueta-estatus--rechazado">Cerrada</p>
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Solicitudes recibidas:</strong> 11</li>
+            <li><strong>Publicada:</strong> <time datetime="2026-10-01">1 de octubre de 2026</time></li>
+          </ul>
+          <div class="tarjeta-vacante__acciones">
+            <button class="boton boton--primario" type="button">Ver candidatos<span class="solo-lector"> de Repartidor(a)</span></button>
+            <button class="boton boton--secundario" type="button">Editar<span class="solo-lector"> Repartidor(a)</span></button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div>
+        <p class="pie__titulo"><strong>AMAC · asociAMayores A.C.</strong></p>
+        <p>Envejecer es vivir.</p>
+      </div>
+      <div>
+        <p class="pie__titulo"><strong>Contacto</strong></p>
+        <address>
+          Av. Gómez Morín #234, San Pedro Garza García, N.L.<br>
+          <a href="tel:+528110223344">(81) 1022 3344</a><br>
+          <a href="https://www.amac.org" target="_blank" rel="noopener noreferrer">www.amac.org<span class="solo-lector"> (se abre en una pestaña nueva)</span></a>
+        </address>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <p class="pie__titulo"><strong>Ir a</strong></p>
+        <ul class="pie__lista">
+          <li><a href="index.html">Vacantes</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a href="empresa-vacantes.html">Panel de empresa</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="pie__legal contenedor">© 2026 asociAMayores A.C. · Proyecto escolar OT2026-WEB</p>
+  </footer>
+</body>
+</html>

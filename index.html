@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <meta name="description" content="Busca vacantes de empleo en la bolsa de trabajo de AMAC.">
+  <link rel="icon" href="img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <div class="barra-ayuda">
+    <div class="contenedor barra-ayuda__interior">
+      <a href="tel:+528110223344"><img src="img/icono-telefono.svg" alt="" width="24" height="24">¿Necesitas ayuda? Llama a AMAC: (81) 1022 3344</a>
+    </div>
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="62" height="31">
+        <span class="logo__texto"><span class="logo__nombre">AMAC</span><span class="logo__sub">Bolsa de trabajo</span></span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html" aria-current="page">Vacantes</a></li>
+          <li><a class="menu__enlace" href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a class="menu__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="menu__enlace" href="empresa-vacantes.html">Panel de empresa</a></li>
+          <li><a class="menu__enlace menu__enlace--destacado" href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor">
+      <h1>Vacantes disponibles</h1>
+      <p class="subtitulo">Encuentra trabajo cerca de ti.</p>
+
+      <form class="buscador" role="search" action="index.html" method="get">
+        <div class="campo-formulario">
+          <label for="buscar">Buscar por puesto, empresa o lugar</label>
+          <input type="search" id="buscar" name="q" autocomplete="off">
+        </div>
+
+        <button class="boton boton--primario" type="submit">Buscar</button>
+      </form>
+
+      <form class="filtros" action="index.html" method="get">
+        <fieldset class="grupo-campos">
+          <legend>Filtrar vacantes</legend>
+
+          <div class="filtros__campos">
+            <div class="campo-formulario">
+              <label for="horario">Horario</label>
+              <select id="horario" name="horario">
+                <option value="">Todos los horarios</option>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="nocturno">Nocturno</option>
+                <option value="por-horas">Por horas</option>
+              </select>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="categoria">Categoría</label>
+              <select id="categoria" name="categoria">
+                <option value="">Todas las categorías</option>
+                <option value="administracion">Administración</option>
+                <option value="ventas">Ventas</option>
+                <option value="servicios">Servicios</option>
+                <option value="cocina">Cocina</option>
+                <option value="transporte">Transporte</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="boton boton--secundario" type="submit">Aplicar filtros</button>
+        </fieldset>
+      </form>
+
+      <p><strong>6 vacantes disponibles</strong></p>
+
+      <section class="lista-tarjetas" aria-label="Lista de vacantes">
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Auxiliar administrativo</h2>
+          <p class="tarjeta-vacante__empresa">Papelería El Roble</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $9,500 mensuales</li>
+            <li><strong>Ubicación:</strong> Monterrey, N.L.</li>
+            <li><strong>Horario:</strong> Matutino</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Auxiliar administrativo en Papelería El Roble</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Cajero(a)</h2>
+          <p class="tarjeta-vacante__empresa">Supermercado La Esquina</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $8,200 mensuales</li>
+            <li><strong>Ubicación:</strong> Santa Catarina, N.L.</li>
+            <li><strong>Horario:</strong> Vespertino</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Cajero(a) en Supermercado La Esquina</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Recepcionista</h2>
+          <p class="tarjeta-vacante__empresa">Clínica Salud Vital</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $10,000 mensuales</li>
+            <li><strong>Ubicación:</strong> San Pedro Garza García, N.L.</li>
+            <li><strong>Horario:</strong> Matutino</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Recepcionista en Clínica Salud Vital</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Ayudante de cocina</h2>
+          <p class="tarjeta-vacante__empresa">Restaurante Doña Lupe</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $7,800 mensuales</li>
+            <li><strong>Ubicación:</strong> Guadalupe, N.L.</li>
+            <li><strong>Horario:</strong> Vespertino</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Ayudante de cocina en Restaurante Doña Lupe</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Chofer repartidor</h2>
+          <p class="tarjeta-vacante__empresa">Distribuidora Norte</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $11,500 mensuales</li>
+            <li><strong>Ubicación:</strong> Apodaca, N.L.</li>
+            <li><strong>Horario:</strong> Matutino</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Chofer repartidor en Distribuidora Norte</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-vacante">
+          <h2 class="tarjeta-vacante__titulo">Mesero(a)</h2>
+          <p class="tarjeta-vacante__empresa">Café Central</p>
+
+          <ul class="tarjeta-vacante__datos">
+            <li><strong>Sueldo:</strong> $7,500 mensuales</li>
+            <li><strong>Ubicación:</strong> Monterrey, N.L.</li>
+            <li><strong>Horario:</strong> Por horas</li>
+          </ul>
+
+          <div class="tarjeta-vacante__acciones">
+            <a class="boton boton--primario" href="vacante.html">
+              Ver vacante
+              <span class="solo-lector"> de Mesero(a) en Café Central</span>
+            </a>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+
+      <div>
+        <p class="pie__titulo"><strong>AMAC · asociAMayores A.C.</strong></p>
+        <p>Envejecer es vivir.</p>
+      </div>
+
+      <div>
+        <p class="pie__titulo"><strong>Contacto</strong></p>
+
+        <address>
+          Av. Gómez Morín #234, San Pedro Garza García, N.L.<br>
+          <a href="tel:+528110223344">(81) 1022 3344</a><br>
+          <a href="https://www.amac.org" target="_blank" rel="noopener noreferrer">
+            www.amac.org
+            <span class="solo-lector"> (se abre en una pestaña nueva)</span>
+          </a>
+        </address>
+      </div>
+
+      <nav aria-label="Enlaces del pie de página">
+        <p class="pie__titulo"><strong>Ir a</strong></p>
+
+        <ul class="pie__lista">
+          <li><a href="index.html">Vacantes</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a href="empresa-vacantes.html">Panel de empresa</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <p class="pie__legal contenedor">
+      © 2026 asociAMayores A.C. · Proyecto escolar OT2026-WEB
+    </p>
+  </footer>
+</body>
+</html>
