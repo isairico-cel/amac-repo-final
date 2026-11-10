@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta de candidato | AMAC</title>
+  <meta name="description" content="Crea tu cuenta de candidato para postularte a vacantes de AMAC.">
+  <link rel="icon" href="img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <div class="barra-ayuda">
+    <div class="contenedor barra-ayuda__interior">
+      <a href="tel:+528110223344"><img src="img/icono-telefono.svg" alt="" width="24" height="24">¿Necesitas ayuda? Llama a AMAC: (81) 1022 3344</a>
+    </div>
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="62" height="31">
+        <span class="logo__texto"><span class="logo__nombre">AMAC</span><span class="logo__sub">Bolsa de trabajo</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="menu__enlace" href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a class="menu__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="menu__enlace" href="empresa-vacantes.html">Panel de empresa</a></li>
+          <li><a class="menu__enlace menu__enlace--destacado" href="login.html" aria-current="page">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor contenedor--estrecho">
+      <a class="enlace-volver" href="login.html">← Volver al inicio de sesión</a>
+      <h1>Crear cuenta de candidato</h1>
+      <p class="subtitulo">Llena tus datos. Los campos son necesarios para poder postularte.</p>
+
+      <form action="login.html" method="get">
+        <fieldset class="grupo-campos">
+          <legend>Datos personales</legend>
+          <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+          <div class="campos-dobles">
+            <div class="campo-formulario">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" required>
+              <p class="campo-formulario__ayuda">Ejemplo: nombre@correo.com</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+              <p class="campo-formulario__ayuda">Ejemplo: 81 1234 5678</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="clave">Contraseña</label>
+              <input type="password" id="clave" autocomplete="new-password" minlength="8" required>
+              <p class="campo-formulario__ayuda">Mínimo 8 caracteres.</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="clave2">Repetir contraseña</label>
+              <input type="password" id="clave2" autocomplete="new-password" minlength="8" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo-campos">
+          <legend>Medio de contacto preferido</legend>
+          <div class="opcion">
+            <input type="radio" id="contacto-correo" name="contacto" value="correo" checked>
+            <label for="contacto-correo">Por correo</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="contacto-telefono" name="contacto" value="telefono">
+            <label for="contacto-telefono">Por teléfono</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo-campos">
+          <legend>Dirección</legend>
+          <div class="campo-formulario">
+            <label for="calle">Calle y número</label>
+            <input type="text" id="calle" name="calle" autocomplete="street-address" required>
+          </div>
+          <div class="campos-dobles">
+            <div class="campo-formulario">
+              <label for="colonia">Colonia</label>
+              <input type="text" id="colonia" name="colonia" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="municipio">Municipio</label>
+              <input type="text" id="municipio" name="municipio" autocomplete="address-level2" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="cp">Código postal</label>
+              <input type="text" id="cp" name="cp" inputmode="numeric" autocomplete="postal-code" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo-campos">
+          <legend>Experiencia laboral</legend>
+          <div class="campos-dobles">
+            <div class="campo-formulario">
+              <label for="puesto">Último puesto</label>
+              <input type="text" id="puesto" name="puesto">
+              <p class="campo-formulario__ayuda">Ejemplo: Cajera</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="empresa">Empresa donde trabajaste</label>
+              <input type="text" id="empresa" name="empresa">
+            </div>
+            <div class="campo-formulario">
+              <label for="anios">Años de experiencia</label>
+              <input type="number" id="anios" name="anios" min="0" max="60">
+            </div>
+          </div>
+          <div class="campo-formulario">
+            <label for="habilidades">Habilidades</label>
+            <textarea id="habilidades" name="habilidades"></textarea>
+            <p class="campo-formulario__ayuda">Ejemplo: atención a clientes, caja, computadora.</p>
+          </div>
+          <div class="campo-formulario">
+            <label for="curriculum">Currículum (PDF o Word)</label>
+            <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx">
+          </div>
+        </fieldset>
+
+        <div class="opcion">
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto los términos y el aviso de privacidad</label>
+        </div>
+
+        <div class="acciones acciones--fila">
+          <button class="boton boton--primario" type="submit">Crear mi cuenta</button>
+          <a class="boton boton--secundario" href="login.html">Ya tengo cuenta</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div>
+        <p class="pie__titulo"><strong>AMAC · asociAMayores A.C.</strong></p>
+        <p>Envejecer es vivir.</p>
+      </div>
+      <div>
+        <p class="pie__titulo"><strong>Contacto</strong></p>
+        <address>
+          Av. Gómez Morín #234, San Pedro Garza García, N.L.<br>
+          <a href="tel:+528110223344">(81) 1022 3344</a><br>
+          <a href="https://www.amac.org" target="_blank" rel="noopener noreferrer">www.amac.org<span class="solo-lector"> (se abre en una pestaña nueva)</span></a>
+        </address>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <p class="pie__titulo"><strong>Ir a</strong></p>
+        <ul class="pie__lista">
+          <li><a href="index.html">Vacantes</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a href="empresa-vacantes.html">Panel de empresa</a></li>
+          <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="pie__legal contenedor">© 2026 asociAMayores A.C. · Proyecto escolar OT2026-WEB</p>
+  </footer>
+</body>
+</html>
